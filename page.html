@@ -1,52 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt_br">
 <head>
-    <title>Página de Cadastro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
         body {
             display: flex;
             flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
-            padding: 0;
             font-family: Arial, sans-serif;
         }
-
-        header {
-            background-color: #f2f2f2;
-            padding: 20px;
+        header, footer {
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 20px 0;
             text-align: center;
         }
-
-        footer {
-            background-color: #f2f2f2;
-            padding: 20px;
-            text-align: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
-
-        main {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        input, button {
+            padding: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Meu Site</h1>
+        <h1>Cadastro</h1>
     </header>
-
-    <main>
-        <h2>Cadastro</h2>
-        <!-- Seu formulário de cadastro aqui -->
-    </main>
-
+    <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Senha" required>
+        <button type="submit">Cadastrar</button>
+    </form>
     <footer>
-        <p>&copy; 2022 Meu Site. Todos os direitos reservados.</p>
+        <p>© 2022 Minha Empresa</p>
     </footer>
 </body>
 </html>
